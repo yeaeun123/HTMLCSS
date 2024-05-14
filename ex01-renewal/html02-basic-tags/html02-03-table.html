@@ -16,10 +16,11 @@
     <!-- 테이블 선언-->
     <table border="1">
         <caption>성적표</caption>
+        <!--테이블 헤더 : thead -->
         <thead>
         <!--행 정보 표시: TR  -->
         <tr>
-                <!-- 헤더 : TH-->
+                <!-- 컬럼 헤더 (제목) : TH-->
                 <th width="200" height="30">이름</th>
                 <th>나이</th>
                 <th>점수</th>
@@ -52,13 +53,37 @@
 
     </table>
 
-    <h2>열과 행의 확장</h2>
+    <h2>열과 행의 확장</h2>  
     <ul>
         <li>colspan: 열 확장</li>
+
         <li>rowspan: 행 확장</li>
     </ul>
 
     <!-- 열과 행 확장 연습 -->
+    <!-- 4행 3열의 테이블-->
+    <table border ="1">
+        <tr>
+            <!-- rowspan 속성 : 확장할 행 수 -->
+            <td width="100" rowspan="2">(1, 1)</td>
+            <td width="100">(1, 2)</td>
+            <td width="100">(1, 3)</td>
+        </tr>
+        <tr>
+            <!--td>(2, 1)</td-->
+            <!-- colspan 속성 : 확장할 컬럼의 갯수 -->
+            <td colspan="2">(2, 2)</td>
+            
+        </tr>
+        <tr>
+            <td>(3, 1)</td>
+            <td colspan="2" rowspan="2">(3, 2)</td>
+           
+        </tr>
+        <tr>
+            <td>(4, 1)</td>
+        </tr>
+    </table>
 </body>
 
 </html>
