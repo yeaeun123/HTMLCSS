@@ -25,7 +25,7 @@
             <li><a href="#speed" title="국가별 속도">국가별 속도</a></li>
         </ol>
         <br />
-        <p>메일링 리스트 가입</p>
+        <p><a href="#mail" title="메일링 가입">메일링 리스트 가입</a></p>
         <hr />
         <br />
 
@@ -49,7 +49,7 @@
         <p>2002년 2월에 전 세계 인터넷 이용자의 수는 5억 4420만 명에 이르렀는데, 북미 지역이 1억 8123만 명으로 가장 많았고, 그 다음이 유럽 지역으로 1억 7135만 명에 달했으며, 중동과 아프리카 지역은 이용률이 매우 낮았다.</p>
         <p>2003년 6월에 대한민국의 인터넷 이용자수는 2861만 1000명이고, 2006년 12월에 초고속 인터넷 서비스 가입자는 1401만 1419명이었다.</p>
     
-        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <section id="feature"></section>
         <h1>인터넷 개론</h1>
         <br>
@@ -78,7 +78,7 @@
             <li>4.고용창출 효과</li>
         </ol>
 
-        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <section id="speed"></section>
         <h1>인터넷 개론</h1>
         <br>
@@ -121,8 +121,39 @@
             <td align="right">12.99</td>
         </tr>
 
-
     </table>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section id="mail"></section>
+    <h1>메일링 리스트 가입</h1>
+    <form action ="#" method="post">
+  
+        <fieldset>
+            <legend>회원정보</legend>
+
+            <label for="username">사용자 이름:</label>
+            <input type="text" name="username" id="username" required /><br />
+
+            <label for="email">사용자 이메일:</label>
+            <input type="email" name="email" id="email" required /> <br />
+
+            <label for="password">비밀번호:</label>
+            <input type="password" name="password" id="password" required />
+
+            <label for="password_confirm">비밀번호 확인:</label>
+            <input type="password" name="password_confirm" id="password_confirm" /><br />
+
+            <label>성별</label>
+            <input type="radio" name="gender" id="male" value="M" checked />
+            <label for="male">남성</label>
+            <input type="radio" name="gender" id="female" value="F" />
+            <label for="female">여성</label><br />
+
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms">이용 약관에 동의합니다.</label><br />
+
+            <input type="submit" value="가입하기" />
+            <input type="reset" value="다시 작성" />
+           </fieldset>
     </body>
 
 </html>
