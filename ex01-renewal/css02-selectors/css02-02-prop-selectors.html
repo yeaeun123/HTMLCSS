@@ -3,6 +3,38 @@
 
 <head>
     <title>CSS 속성 선택자 실습</title>
+    <style>
+        /* 속성 선택자 
+            1. 특정 속성의 유무 : [속성명]
+            2. 속성의 값에 따른 선택 : 
+                        [속성명=속성값]  -일치
+                        [속성명!=속성값] -불일치
+        */
+        /* 속성의 유무에 따른 선택자*/
+        a[href] { /* href 속성을 가진 a 태그*/
+            color: green;
+        }
+
+        /* href 속성이 특정 조건을 만족시키는 태그 선택자 */
+        /* href 속성이 http://로 시작되는 요소를 선택 */
+        a[href^="http://"] {
+            color: red;
+        }
+        /* href 속성이 /로 시작되는 요소를 선택*/
+        a[href^="/"] {
+            color: blue;
+        }
+
+        /* type=text인 input 요소를 선택 */
+        input[type="text"]{
+            border: 2px dotted blue;
+        }
+        /* type=button인 input 요소를 선택 */
+        input[type="button"]{
+            border: none;
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
