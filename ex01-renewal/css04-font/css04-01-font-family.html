@@ -3,12 +3,95 @@
 
 <head>
     <title>CSS 폰트 실습</title>
+    <!-- 구글 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 구글 웹 폰트 -->
+    <style>
+        /*font-family */
+        /* 가장 마지막에 generic font(serif,sans-serif, monospace 중 하나)*/
+
+        #font-family > .serif{
+            font-family : 'Times New Roman',Times, serif;
+        }
+        #font-famaily > .sans-serif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #font-family > .monospace {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* font-weight :글꼴의 두께 */
+        /*  font-weight  수치로 입력 (100 thin , 400 normal , 700 bord) */
+        /* 글꼴이 수치 속성을 지원해주는 글꼴이어야한다.*/
+        .font-weight > .n100 {
+            font-weight: 100;
+        }
+        .font-weight > .n400 {
+            font-weight: 400;
+        }
+        .font-weight > .n700 {
+            font-weight: 700;
+        }
+
+        /*  font-weight  키워드 방식 */
+        .font-weight >.lighter {
+            font-weight: lighter;
+        }
+
+        .font-weight > .normal {
+            font-weight: normal;
+        }
+        .font-weight > .bold {
+            font-weight: bold;
+        }
+
+        /* font-style : 기울임  */
+        .font-style > .normal {
+            font-style: normal;
+        }
+        .font-style > .italic {
+            font-style: italic;
+        }
+        .font-style > .oblique {
+            font-style: oblique;
+        }
+
+        /* line-height : 줄 간격 (줄과 줄 사이의 간격) */
+        .line-height { 
+            height: 100px;
+        }
+        .line-height > div {
+            border: 1px dotted red;
+            display: inline-block;
+        }
+        .line-height > .n10 {
+            line-height: 1.0;
+        }
+        .line-height > .n15 {
+            line-height: 1.5;
+        }
+        .line-height > .n20 {
+            line-height: 2.0;
+        }
+
+        #web-font{
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body>
     <h1>CSS 폰트 실습</h1>
 
+    <h2> 웹 폰트</h2>
+    <div id="web-font">
+        웹 폰트 적용 연습
+    </div>
     <h2>font-family</h2>
     <ul id="font-family">
         <li class="serif"><b>Serif</b>: 글자의 모서리에 작은 장식이 있는, 전통적인 스타일의 글꼴</li>
@@ -24,6 +107,7 @@
     <h2>font-weight</h2>
 
     <h3>수치로 입력</h3>
+    <p>글꼴이 수치 속성을 지원해주는 글꼴이어야한다.</p>
     <ul class="font-weight">
         <li class="n100">100: thin</li>
         <li class="n400">400: normal</li>
@@ -55,8 +139,8 @@
             line-height: 1.5
         </div>
         <div class="n20">
-            line-height: 1.5<br>
-            line-height: 1.5
+            line-height: 2.0<br>
+            line-height: 2.0
         </div>
     </div>
 
