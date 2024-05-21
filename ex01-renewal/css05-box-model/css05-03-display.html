@@ -3,6 +3,33 @@
 
 <head>
     <title>CSS Display 실습</title>
+    <style>
+        /* block 방식의 공간 점유 */
+        .block-display {
+            display: block;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        /* inline-display 방식 (inline: 개행없음)*/
+        /* span=>inline방식 / div=>block방식*/
+        .inline-display {
+            display: inline;
+            background-color: lightcoral; 
+        }
+        /* inline-block-display */
+        .inline-block-display {
+            display: inline-block; /* 강제로 display 속성 변경*/
+            background-color: lightgreen;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .none-display {
+            display: none;
+            /* 공간 점유를 하지 않는다 (안보임+공간 자체 사라짐)*/
+        }
+
+    </style>
 </head>
 
 <body>
