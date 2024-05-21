@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+        .container{
+            border: 2px solid ;
+            height: 100px;
+
+            margin-top: 50px;
+
+            position: relative; /*기준점 설정*/
+
+            /* overflow: hidden;  /*overflow:hidden 기준점 기준으로 넘치는 화면 숨기기*/ 
+            overflow: scroll; /* 기준점 기준으로 넘치는 화면 scroll */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            /* 좌표계를 absolute로 이용 (기준점 필요)*/
+            position: absolute;
+        }
+        .box:nth-child(1){
+            background-color: red;
+
+            left:10px;
+            top:10px;
+        }
+        .box:nth-child(2){
+            background-color: green;
+
+            left: 50px;
+            top: 50px;
+
+            z-index: 10; /* z-index 숫자 클수록 앞으로 나온다 */
+        }
+        .box:nth-child(3){
+            background-color: blue;
+
+            left: 90px;
+            top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

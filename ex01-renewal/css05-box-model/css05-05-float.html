@@ -4,6 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS float 연습</title>
+    <style>
+        /* 목록 -> 메뉴 스타일로 바꾸기 */
+        .menu {
+            list-style-type: none;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menu > li{
+            float: left;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* float를 사용해서 기사 스타일 작성*/
+        .news-article {
+            overflow: hidden;   /*float요소들을 감싸기 위해 필요*/
+
+        }
+
+        .news-img {
+            float: right;
+            width: 150px;
+            margin: 20px;
+            background-color: #ddd;
+        }
+
+        /* 기사 내용 */
+        .article-content {
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>

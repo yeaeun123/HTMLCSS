@@ -26,7 +26,23 @@
         }
         .none-display {
             display: none;
-            /* 공간 점유를 하지 않는다 (안보임+공간 자체 사라짐)*/
+            /* none: 공간 점유를 하지 않는다 (안보임+공간 자체 사라짐)*/
+        }
+        
+        img.hidden, img.none, img.normal {
+            width: 50%;
+        }
+
+        /* visibility : hidden */
+        /*  -> 시각적으로 보이지 않게 한 것 (페이지 상의 공간은 있음)*/
+        img.hidden {
+            visibility: hidden;
+        }
+        
+        /* display : none 
+                -> 공간 점유 자체를 하지 않음 (페이지 상에 없음)*/
+        img.none{
+            display: none;
         }
 
     </style>
@@ -51,8 +67,11 @@
 
     <h3>visibility vs display: none</h3>
     <div>
+        <h5>visibility: hidden</h5>
         <img class="hidden" src="../images/penguins.jpg">
+        <h5>display: none</h5>
         <img class="none" src="../images/penguins.jpg">
+        <h5>normal image</h5>
         <img class="normal" src="../images/penguins.jpg">
 
     </div>
