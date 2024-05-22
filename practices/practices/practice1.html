@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>테이블</title>
+
+<style type="text/css" media="screen">
+	/*실습문제1*/
+	/* table{
+		border: 1px double black; 	
+		padding: 3px; 
+	}
+	 th{
+		border: 1px double black; 	
+		padding: 3px; 
+	} 
+	td{
+		border: 1px double black; 	
+		padding: 3px; 
+	} */
+	/*실습문제1-1*/
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.body{
+		font-family: "맑은 고딕","돋움",sans-serif;
+		font-size: 12px;
+		color: #333;
+	}
+	.tbl-ex{
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/*실습문제1-2*/
+	/* .tbl-ex{
+		border: 1px solid #333;
+	}  */
+	th{
+		border: 1px solid #333;
+	}
+	td{
+		border: 1px solid #333;
+	}
+	/*실습문제1-3*/
+	.tbl-ex{
+		border-collapse: collapse;
+	}
+	/*실습문제1-4*/
+	th,td{
+		padding: 8px;
+	}
+	/*실습문제1-5*/
+	tr:nth-child(1){
+		background-color: #999;
+		font-size: 1.1em;
+		color: #fff;
+	}
+	/*실습문제1-6*/
+	table,th,td{
+		border-left: 0;
+		border-right: 0;
+	}
+
+	/* 실습문제 1-7*/
+	th{
+		border-top: 2px solid #333;
+		border-bottom: 2px solid #333;
+	}
+	tr:last-child {
+		border-bottom: 1px solid #333;
+	}
+	/*실습문제 1-8*/
+	td{
+		border-style: dotted;
+	}
+	/*실습문제 1-9*/
+	/* tr:hover{
+		background-color: #fc6;
+		cursor: pointer;
+	} */
+	/*실습문제 1-10*/
+	.even:nth-child(2n+1){
+		background-color: #e8ecf6;
+		
+	}
+	tr:hover{
+		background-color: #fc6;
+		cursor: pointer;
+	}
+	.even:hover{
+		background-color: #fc6;
+		cursor: pointer;
+	}
+
+
+</style>
+</head>
+<body>
+	<table class="tbl-ex">
+		<tr>
+			<th>형식</th>
+			<th>선택자 이름</th>
+			<th>스타일 적용 요소</th>
+			<th>호환성</th>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>HTML</td>
+			<td>모든 HTML에 적용</td>
+			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
+		</tr>
+		<tr class="even">
+			<td>.classname</td>
+			<td>클래스</td>
+			<td>클래스로 정의해 준 HTML 태그</td>
+			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
+		</tr>
+		<tr>
+			<td>a.classname</td>
+			<td>종속 클래스</td>
+			<td>특정 HTML 태그에 종속된 클래스</td>
+			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
+		</tr>
+		<tr class="even">
+			<td>#idname</td>
+			<td>아이디</td>
+			<td>아이디로 정의해준 HTML 태그</td>
+			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
+		</tr>
+		<tr>
+			<td>a#idname</td>
+			<td>종속아이디</td>
+			<td>특정 HTML 태그에 종속된 아이디</td>
+			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
+		</tr>
+		<tr class="even">
+			<td>*</td>
+			<td>전체 선택</td>
+			<td>모든 HTML 태그에 적용</td>
+			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS2</td>
+		</tr>	
+	</table>
+</body>
+</html>
