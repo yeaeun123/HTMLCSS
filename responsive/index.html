@@ -8,7 +8,16 @@
     <title>Document</title>
     <!-- 구글 웹 폰트에서 폰트 선택 후 링크 -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <style>
+    
+    <!-- 선택적 외부 CSS 로딩 -->
+     <link ref="stylesheet" href="./css/default.css" /><!--기본 CSS -->
+     <link ref="stylesheet" href="./css/tablet.css" 
+                media="screen and (min-width:768px)" /><!--tablet CSS-->
+    <link ref="stylesheet" href="./css/computer.css" 
+                media="screen and (min-width: 1024px)" /><!--computer CSS-->
+
+    
+    <!--style>
                 /* 기본 CSS */
         /* 전체 선택자로 기본 스타일을 지정 */
         * {
@@ -197,7 +206,7 @@
             
         }
 
-    </style>
+    </style-->
 </head>
 
 <body>
